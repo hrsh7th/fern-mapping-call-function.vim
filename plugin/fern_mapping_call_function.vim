@@ -3,5 +3,5 @@ if exists('g:fern_mapping_call_function')
 endif
 let g:fern_mapping_call_function = v:true
 
-call add(g:fern#internal#mapping#mappings, 'call_function')
+call add(g:fern#mapping#mappings, 'call_function')
 
