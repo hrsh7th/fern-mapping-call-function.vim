@@ -5,7 +5,7 @@ let s:fns = {}
 "
 function! fern#mapping#call_function#init(disable_default_mappings) abort
   for l:name in keys(s:fns)
-    execute printf("nmap <silent><buffer> <Plug>(fern-action-call-function:%s) :<C-u>call <SID>call('%s')<CR>", l:name, l:name)
+    execute printf("nnoremap <silent><buffer> <Plug>(fern-action-call-function:%s) :<C-u>call <SID>call('%s')<CR>", l:name, l:name)
   endfor
 endfunction
 
